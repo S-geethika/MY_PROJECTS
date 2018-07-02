@@ -182,13 +182,12 @@ asins = list(asins)
 df_asins = list(data['asin'])
 
 
-def engine(doc_id, w_t, w_c, w_b,w_i, num_results):
-    title_dist  = pairwise_distances(w2v_title_weight, w2v_title_weight[doc_id].reshape(1,-1))
-    color_dist = pairwise_distances(color_features, color_features[doc_id])
-    brand_dist = pairwise_distances(brand_features, brand_features[doc_id])
+def engine(doc_id, w1, w2, w3, num_results):
+    idf_w2v_dist  = pairwise_distances(w2v_title_weight, w2v_title_weight[doc_id].reshape(1,-1))
+    ex_feat_dist = pairwise_distances(extra_features, extra_features[doc_id])
     doc_id = asins.index(df_asins[doc_id])
     image_dist = pairwise_distances(bottleneck_features_train, bottleneck_features_train[doc_id].reshape(1,-1))
-    pairwise_dist   = (w_t * title_dist +  w_c * color_dist + w_b*brand_dist+w_i * image_dist)/float(w_t + w_c+w_b + w_i)
+    pairwise_dist   = (w1 * idf_w2v_dist +  w2 * ex_feat_dist + w3 * image_dist)/float(w1 + w2 + w3)
     indices = np.argsort(pairwise_dist.flatten())[0:num_results]
     pdists  = np.sort(pairwise_dist.flatten())[0:num_results]
     df_indices = list(data.index[indices])
@@ -201,4 +200,4 @@ def engine(doc_id, w_t, w_c, w_b,w_i, num_results):
         print('euclidean distance from input :', pdists[i])
         print('='*125)
 
-engine(12566, 50, 20, 5, 10, 20)
+engine(12566, 28,20,3, 10)
