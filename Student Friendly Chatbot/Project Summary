@@ -10,12 +10,15 @@ Technologies used : C, MySql, Lex
 
 Files Description
 
-    sample database a. cse_marks b. cse_grades
-    lex file : ask.l
-    c file : reply.c
+    1. sample database :
+       a. cse_marks 
+       b. cse_grades
+    2. lex file : ask.l
+    3. c file : reply.c
 
 RUNNING THE CODE
 
     lex ask.l (generates lex.yy.c)
     gcc -o run $(mysql_config --cflags) reply.c $(mysql_config --libs) lex.yy.c (compiles and links .c, lex files)
     ./run
+
