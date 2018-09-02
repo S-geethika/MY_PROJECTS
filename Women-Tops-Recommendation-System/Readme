@@ -1,2 +1,3 @@
 Project title : Women's top recommendation system.
-Aim : To build a recommendation system which takes top brand, size, image and gives top 20 tops as the output. The data is taken from amazon women's apparel section.
+AIm : To build a recommendation system which takes top brand, size, image as input and gives 10 most related tops as the output.
+The data is taken from amazon women's apparel section.....
