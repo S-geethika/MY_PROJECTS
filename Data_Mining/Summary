@@ -1,1 +1,6 @@
-Thefk;fwefje
+                PROJECT SUMMARY
+Generally the students after completing their secondary education have a thought whether the college they want to choose is suitable for them or not. In this project, we presented a model which can recommend the college according to the input given by the student.
+The College Administration always wants to interact with their students and make necessary improvements, which is difficult in real world scenario. To solve this, we proposed a model which collects the required data from students, administration, processes the data and provides necessary feedback to the administration. 
+Every student wants to know the factors affecting their CGPA so that they can improve themselves for getting better results. So we provided those factors using data mining and a model for predicting cgpa.
+We grouped the students’ data into certain categories and found deciding attributes for a student (data tuple) to fall into a particular category.
+
