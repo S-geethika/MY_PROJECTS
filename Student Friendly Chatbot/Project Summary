@@ -1,10 +1,10 @@
 INST-StudentFriendlyChatbot
 
-In educational institutions, it is a difficult task for a student to get the details such as scores in subjects and grades,available books in the ........... With the growing technology, there are many student-friendly assistants for information retrieval. A Chatbot is one among them.
+In educational institutions, it is a difficult task for a student to get the details such as scores in subjects, semester grade point average(sgpa), cumulative grade point average(cgpa). With the growing technology, there are many student-friendly assistants for information retrieval. A Chatbot is one among them.
 
 AIM OF THE PROJECT: To develop a user interface that responds to the student queries instantly.
 
-This chatbot uses the computer as an interface to take the queries from the user. The given input is recognised by the lex as tokens. Rules for each token are defined and are processed as sql queries. The query results are displayed to the user.
+This chatbot uses the computer as an interface to take the queries from the user. The given input is recognised by the lex as tokens. Rules for each token are defined and are processed as sql queries. The query results are displayed to the user. The chatbot starts the conversation with greeting. It is also programmed to respond to some basic general conversations. The chatbot is made more interesting for use by displaying a short story when 'boring' is typed by the user.
 
 Technologies used : C, MySql, Lex
 
@@ -21,4 +21,5 @@ RUNNING THE CODE
     lex ask.l (generates lex.yy.c)
     gcc -o run $(mysql_config --cflags) reply.c $(mysql_config --libs) lex.yy.c (compiles and links .c, lex files)
     ./run
+    
 
