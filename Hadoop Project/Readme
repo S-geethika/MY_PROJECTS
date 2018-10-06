@@ -1,0 +1,7 @@
+Objective : to predict the day as Hot or Cold based on temperature.
+Data set : NCDC ( National Climate Data Center – NOAA ) ftp://ftp.ncdc.noaa.gov/pub/data/uscrn/products/daily01
+
+Description :
+The java file is loaded in Eclipse and after confirming that there are no errors, we export project as jar file and run it using hadoop
+command :
+hadoop jar temp.jar weather.txt
