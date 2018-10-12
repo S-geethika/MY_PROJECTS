@@ -1,0 +1,23 @@
+Aim : 
+  The objective of the project is to develop management system to schedule the evaluation of students’ assignments based on the time convenient for faculty.
+Purpose:
+  To provide the functional and non-functional requirements of the automated slot scheduling  of assignment evaluation system to know the functionalities implemented. 
+Project Scope:
+The scope of the project can be up to the educational universities level which can help the administration, faculty, students by automating the manual process of  assignment slot scheduling and evaluation.
+
+Faculty Module:
+Free slot planning and scheduling.
+View schedule containing date, slot time, student roll number.
+Fill score, remarks, attendance of the students.
+
+Student Module:
+Select an assignment of any subject from their running semester.
+Opt a slot based on their convenience.
+Flexibility to change the opted slots.
+View the performance analysis report via registered mail.
+
+Technologies used
+Html
+css
+php
+javascript
