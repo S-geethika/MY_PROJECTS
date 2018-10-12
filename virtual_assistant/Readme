@@ -1,0 +1,4 @@
+AIm of the project : Build a Virtual Assistant which can answer different factual queries related to mathematics, computer algebra, symbolic and numerical computation, visualization, statistics, articles and summaries of a different topics directly by computing the answer from externally sourced "curated data" rather than providing a list of documents or web pages that might contain the answer.
+
+Programming language used : Python
+data sources : Wikipedia API , Wolfram Alpha API
